@@ -30,7 +30,7 @@ import com.bmd.security.JwtAuthenticationFilter;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    public static final String[] PUBLIC_URLS = {"/bmd/login","/bmd/register", "/bmd/send-otp", "/v2/api-docs",
+    public static final String[] PUBLIC_URLS = {"/bmd/login",/bmd/test,"/bmd/register", "/bmd/send-otp", "/v2/api-docs",
             "/swagger-resources/**", "/swagger-ui/**", "/webjars/**"
 
     };
