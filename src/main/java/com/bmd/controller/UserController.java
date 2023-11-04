@@ -28,6 +28,11 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+	@GetMapping("/test")
+	public String test() {
+		return "API is working...";
+	}
+	
 	// POST-create user
 	@PostMapping("/")
 	public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserDto userDto) {
